@@ -1,0 +1,28 @@
+/*
+Hide and show
+*/
+
+<script>
+		$(document).ready(function(){
+		$(".hide").click(function(){
+			$("p").hide();
+			});
+		});
+	
+	$(document).ready(function(){
+		$(".show").click(function(){
+			$("p").show();
+		});
+	});
+	</script>
+	
+// Find co-ordinates of document
+<script>
+		
+		$("#content",document.body). click(function() {
+			var offset = $(this).offset();
+			event.stopPropagation();
+			$("#result").text(this.tagName +
+			" coords (" + offset.left + ", " + offset.top + ") "  );
+		});
+	</script>

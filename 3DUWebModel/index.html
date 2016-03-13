@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3DU Nation</title>
+	<meta charset="utf-8"/>
+	<link media="all" rel="stylesheet" href="style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+	<script>
+		$(function() {
+			$(".arrow").on("click", function() {
+				$("body").animate({"scrollTop": window.scrollY+900}, 1000);
+				return false;
+			});
+		}); 
+	</script>
+    
+  </head>
+  
+  <body> 
+	<div class="wrapper">
+		<header id="top" class="main-header">
+		  <div class="ids">
+			  <span class="title">Bringing Education to the Next Level</span>
+			  <img src="img/pengu.png" alt="" id="png-img"/>
+			  <h1>3DU - An Educational Platform</h1>
+			  <div>
+			 
+			  <img border="0" class="arrow" src="img/arrow.svg" alt="Down arrow">
+			  
+			  </div>
+		  </div>
+		</header>
+		
+		<table >
+			<th>About Us</th><th>Philosophy</th>
+			<tr class="About">
+				<td>
+					3DU is an educational platform that will change the market for institutional assessment, 
+					and improve the efficiency of student productivity. This application will impact a wide range of
+					schools across the world, and transition educational foundations along the lines of technology. Imagine
+					a system that could save you money from university/college applications, and
+					reduce the chances of buyer's remorse. Afterall, schooling is a hefty investment.
+				</td>
+				<td>
+					Education is important to us because we are all products of it. 3DU wants to change the educational world
+					from the root of it's problems, which we believe begins in a student's education. We all struggle
+					in finding the things we want to pursue, and that's why 3DU was developed. We are the engineers 
+					and connoisseur of educational value. 3DU is here to serve every student.
+				</td>
+			</tr>
+			<th>Product</th><th>Contact Us</th> 
+			<tr class="philo">
+				<td>
+					3DU's platform isn't just a product. It is a long term investment for the success of any student.
+					Many successful professionals believe that the key to success is to ALWAYS have a "student" 
+					mentality. Learning is food, and we provide the utensils.
+				</td>
+				<td class="contact">
+					<form id="contact_form" action="#" method="GET" enctype="multipart/form-data">
+					<div class="row">
+					<label for="name">Your Name:</label><br />
+					<input id="name" class="input" pattern="[A-Za-z\s]+"name="name" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+					<label for="email">Your Email:</label><br />
+					<input id="email" class="input" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"name="email" type="text" value="" size="30" /><br />
+					<input id="submit" type="submit"/>
+					</form>
+				</td>
+			</tr>
+			
+
+			
+		</table>
+	</div>
+    <footer class="main-footer">
+      <p style="color: #000">All rights reserved to 3DU &copy 2015</a>.</p>
+	  <div class="top-button">
+		<a href="#top" style="text-decoration:none;color: #FEDFBF">Back to top &raquo; </a>
+	  </div>
+    </footer>
+	
+	
+  </body>
+</html>
